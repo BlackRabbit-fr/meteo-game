@@ -1,0 +1,36 @@
+.flipped {
+  background-color: lightskyblue;
+}
+
+.city:hover {
+  background-color: lightyellow;
+  cursor: pointer;
+}
+
+.success {
+  background-color: lightseagreen;
+}
+.success:hover {
+  background-color: lightseagreen;
+}
+
+.fail {
+  background-color: lightcoral;
+  opacity: 0;
+  position: absolute;
+  right: 50%;
+  bottom: 50%;
+  font-size: 100px;
+  animation: brief 2s linear;
+}
+@keyframes brief {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.fail:hover {
+  background-color: lightcoral;
+}

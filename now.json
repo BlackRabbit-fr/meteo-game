@@ -1,0 +1,14 @@
+{
+  "name": "meteo-game",
+  "version": 2,
+  "alias": ["meteo-game"],
+  "builds": [
+    {
+      "src": "package.json",
+      "use": "@now/static-build",
+      "config": {
+        "distDir": "public"
+      }
+    }
+  ]
+}
