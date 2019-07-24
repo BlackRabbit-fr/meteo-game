@@ -3,11 +3,10 @@ import React from "react";
 export default function CitiesChoice(props) {
   const { toggleCityAction, foundCities, state } = props;
   return (
-    <div class="col-sm">
+    <div className="col-sm" key={props.name}>
       <a
         className={`dropdown-item 
         ${foundCities.find(city => city === props.name) ? ` success` : ` `}`}
-        key={props.index}
         onClick={() =>
           toggleCityAction(
             props.answer,

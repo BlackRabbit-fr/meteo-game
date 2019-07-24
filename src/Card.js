@@ -39,9 +39,9 @@ export default function Card(props) {
           <div className="col-sm">
             <h5 className="card-title">{props.temp}°</h5>
             <p className="card-text">Humidity: {props.humidity}</p>
-            <h3 className="answer" />
+            {/* <h3 className="display-6">{props.fail}</h3> */}
             {foundCities.find(city => city === props.answer) && [
-              <h3 className="card-text display-5">{props.answer}</h3>
+              <h4 className="card-text display-7">{props.answer}</h4>
             ]}
           </div>
           <div className="col-sm">
@@ -66,7 +66,7 @@ export default function Card(props) {
                       <CitiesChoice
                         {...props}
                         name={cityname}
-                        index={index}
+                        key={index}
                         answer={props.answer}
                       />
                     ))}

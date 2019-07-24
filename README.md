@@ -2,4 +2,4 @@
 
 Based on Open Weather API (https://openweathermap.org/api).
 
-Training project using React Context.
+Project made for training purpose using React Context.
