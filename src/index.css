@@ -34,3 +34,7 @@
 .fail:hover {
   background-color: lightcoral;
 }
+
+.answer {
+  display: none;
+}

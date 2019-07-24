@@ -11,6 +11,7 @@ export default function MeteoList(props) {
         key={meteo.id}
         temp={meteo.main.temp}
         humidity={meteo.main.humidity}
+        icon={meteo.weather[0].icon}
         answer={meteo.name}
       />
     );

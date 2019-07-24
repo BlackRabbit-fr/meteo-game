@@ -1,5 +1,6 @@
 {
   "name": "no-redux",
+  "homepage": "https://meteo-game.blackrabbit.now.sh/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
