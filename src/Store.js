@@ -26,7 +26,8 @@ const initialState = {
     "Seoul"
   ],
   foundCities: [],
-  failMessage: ""
+  failMessage: "",
+  successMessage: ""
 };
 
 function reducer(state, action) {
@@ -36,12 +37,15 @@ function reducer(state, action) {
     case "FAIL":
       return {
         ...state,
-        failMessage: "Try again !"
+        failMessage: "Try again !",
+        successMessage: ""
       };
     case "FOUND_CITY":
       return {
         ...state,
-        foundCities: [...state.foundCities, action.payload]
+        foundCities: [...state.foundCities, action.payload],
+        successMessage: "Bravo!",
+        failMessage: ""
       };
     case "SET_FLIPPED":
       return {

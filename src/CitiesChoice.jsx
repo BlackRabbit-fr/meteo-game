@@ -4,7 +4,7 @@ export default function CitiesChoice(props) {
   const { toggleCityAction, foundCities, state } = props;
   return (
     <div className="col-sm" key={props.name}>
-      <a
+      <button
         className={`dropdown-item 
         ${foundCities.find(city => city === props.name) ? ` success` : ` `}`}
         onClick={() =>
@@ -18,7 +18,7 @@ export default function CitiesChoice(props) {
         href="#"
       >
         {props.name}
-      </a>
+      </button>
     </div>
   );
 }

@@ -1,5 +1,6 @@
 import React from "react";
 import { Store } from "./Store";
+import Header from "./Header";
 import {
   fetchDataAction,
   toggleCityAction,
@@ -23,11 +24,13 @@ export default function HomePage() {
     toggleFlippedAction,
     cities: state.cities,
     foundCities: state.foundCities,
-    fail: state.failMessage
+    fail: state.failMessage,
+    success: state.successMessage
   };
 
   return (
     <React.Fragment>
+      <Header />
       <React.Suspense fallback={<div>Loading...</div>}>
         <div className="row">
           <MeteoList {...props} />
