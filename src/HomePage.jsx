@@ -34,7 +34,6 @@ export default function HomePage() {
       <React.Suspense fallback={<div>Loading...</div>}>
         <div className="row">
           <MeteoList {...props} />
-          {/* {state.failMessage.length > 0 && <div class="fail"> NOP ! </div>} */}
         </div>
       </React.Suspense>
     </React.Fragment>
